@@ -2,7 +2,7 @@ FROM python:3.8-slim
 
 WORKDIR /app
 COPY . .
-ENV PIP_CONFIG_FILE /app/pip.conf
+ENV PIP_CONFIG_FILE=/app/pip.conf
 
 USER root
 RUN mkdir -p /var/log/keycloak-rest-adapter/
